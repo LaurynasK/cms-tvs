@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2016 at 04:04 PM
+-- Generation Time: Apr 07, 2016 at 12:12 AM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 7.0.1
 
@@ -73,23 +73,6 @@ INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activ
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
---
-
-CREATE TABLE `migrations` (
-  `version` int(3) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `migrations`
---
-
-INSERT INTO `migrations` (`version`) VALUES
-(6);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `pages`
 --
 
@@ -133,7 +116,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
 (1, 'abc@abc.lt', '67286890c424ed41576ac962f69ed2f1f2d82eb07ce57299801b6c8691d3dd394da687272ca91ccb27b353356cb2d95c0465f68958e2154908716de7d805ff47', 'abcdef'),
 (2, 'chuck.noris@gmail.com', 'c500ec1fd5dc0f4393881fdf43dd7e82f9785308e7cb77c5df637b788c25e60ca1687fd514ca068ebae43622ee81333376364fa22fce99761f7547640553537c', 'Chuck Norris'),
-(4, 'mail@mail.com', 'a6145bc0c2d356ff36a8e15c995b04dc877e8cc69f1a57defefc7de465ba4509118d0f77a08685318715c31d40cd38f61403bd317d7b1a37591643246d69d4a8', 'MailMan');
+(4, 'mail@mail.com', 'a6145bc0c2d356ff36a8e15c995b04dc877e8cc69f1a57defefc7de465ba4509118d0f77a08685318715c31d40cd38f61403bd317d7b1a37591643246d69d4a8', 'MailMan'),
+(5, 'bcd@bcd.lt', '40c8415ad4b5583e2f781ad9afcde8bd8d4cb2e25dcbd9fddbb69d32c16c8b63d9cf590e2a51508137f8de1bf875acd0a457136d2ed477c3bd0589c5f9b76f9c', 'bcde');
 
 --
 -- Indexes for dumped tables
@@ -182,7 +166,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
