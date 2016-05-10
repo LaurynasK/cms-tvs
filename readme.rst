@@ -8,6 +8,8 @@ In near future i plan to integrate working search bar, comment section and edit 
   
 
 to login intro admin dashboard enter http://localhost/cms-tvs/admin and enter 
+
 email>> bcd@bcd.lt
+
 password>> bcde 
 
